@@ -1,0 +1,284 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar" style="width: 280px; height: 100vh; ">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <a class="navbar-brand" th:href="@{/Menu}" style="width: 100%; height: 12%;">
+            <img th:src="@{/logo.png}" alt="logo.png" width="250px" height="100%">
+        </a>
+    </a>
+    <hr>
+    <nav id="sidebar">
+        <ul class="list-unstyled components">
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#venta-collapse" aria-expanded="false">
+                    <i class="bi bi-currency-dollar"></i>
+                    Venta
+                    <i class="bi bi-caret-down-fill" style="padding-left: 142.5px;"></i>
+                </button>
+                <div class="collapse" id="venta-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                      <li> <a th:href="@{/Venta/NuevoVenta}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/Venta/ListaVentas}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Ventas</a></li>
+                      <li ><a th:href="@{/Informe/Reporte}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Reporte</a></li>                  
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#compra-collapse" aria-expanded="false">
+                    <i class="bi bi-cart-plus"></i>
+                    Compra
+                    <i class="bi bi-caret-down-fill" style="padding-left: 126px;"></i>
+                </button>
+                <div class="collapse" id="compra-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/Compra/NuevoCompra}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/Compra/ListaCompras}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Compras</a></li>
+                      <li ><a th:href="@{/Informe/Reporte}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Reporte</a></li>                                    
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#usuario-collapse" aria-expanded="false">
+                    <i class="bi bi-person-fill"></i>
+                    Usuario
+                    <i class="bi bi-caret-down-fill" style="padding-left: 127px;"></i>
+                </button>
+                <div class="collapse" id="usuario-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/Usuario/NuevoUsuario}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/Usuario/ListaUsuarios}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Usuarios</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#cliente-collapse" aria-expanded="false">
+                    <i class="bi bi-person-fill"></i>
+                    Cliente
+                    <i class="bi bi-caret-down-fill" style="padding-left: 133px;"></i>
+                </button>
+                <div class="collapse" id="cliente-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/Cliente/NuevoCliente}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/Cliente/ListaClientes}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Clientes</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#proveedor-collapse" aria-expanded="false">
+                    <i class="bi bi-people-fill"></i>
+                    Proveedor
+                    <i class="bi bi-caret-down-fill" style="padding-left: 106.5px;"></i>
+                </button>
+                <div class="collapse" id="proveedor-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/Proveedor/NuevoProveedor}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/Proveedor/ListaProveedores}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Proveedores</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#productos-collapse" aria-expanded="false">
+                    <i class="bi bi-box-seam"></i>
+                    Productos
+                    <i class="bi bi-caret-down-fill" style="padding-left: 108px;"></i>
+                </button>
+                <div class="collapse" id="productos-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/Producto/NuevoProducto}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/Producto/ListaProductos}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Productos</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#medioPago-collapse" aria-expanded="false">
+                    <i class="bi bi-person"></i>
+                    Medio de Pago
+                    <i class="bi bi-caret-down-fill" style="padding-left: 68px;"></i>
+                </button>
+                <div class="collapse" id="medioPago-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/MedioPago/NuevoMedioPago}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/MedioPago/ListaMedioPago}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Medio de Pagos</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#tipoComprobante-collapse" aria-expanded="false">
+                    <i class="bi bi-people-fill"></i>
+                    Tipo Comprobante
+                    <i class="bi bi-caret-down-fill" style="padding-left: 39px;"></i>
+                </button>
+                <div class="collapse" id="tipoComprobante-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+                    <li> <a th:href="@{/TipoComprobante/NuevoTipoComprobante}"  class="rounded"><i class="bi bi-plus-circle" style="padding-right: 5px;"></i>Agregar</a></li>
+                      <li ><a th:href="@{/TipoComprobante/ListaTipoComprobante}" class="rounded"><i class="bi bi-list-task" style="padding-right: 5px;"></i>Lista de Clientes</a></li>
+                  </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <!--<ul class="nav nav-pills flex-column mb-auto">
+        <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapsed">Home</a>
+            <ul class="list-unstyled collapse" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li>
+        
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+          Home
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
+            <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+          </ul>
+        </div>
+      </li>
+      
+    </ul>
+    <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>mdo</strong>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+            Dashboard
+          </button>
+          <div class="collapse" id="dashboard-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+            Orders
+          </button>
+          <div class="collapse" id="orders-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            Account
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ">
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
+              <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>-->
+
+
+
+
+<!--<nav class="navbar navbar-expand-lg bg-body-tertiar barraCentro" id="menu">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        Cli/Prov
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/Cliente/ListaClientes}">Cliente</a></li>
+                        <li><a class="dropdown-item" th:href="@{/Proveedor/ListaProveedores}">Proveedor</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        Venta/Compra
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/Venta/ListaVentas}">Venta</a></li>
+                        <li><a class="dropdown-item" th:href="@{/Compra/ListaCompras}">Compra</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        Producto
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/Producto/NuevoProducto}">Registrar</a></li>
+                        <li><a class="dropdown-item" th:href="@{/Producto/ListaProductos}">Listar</a></li>
+                    </ul>
+                </li>     
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        T.Comprobante / M.Pago
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/TipoComprobante/ListaTipoComprobante}">Tipo de Comprobante</a></li>
+                        <li><a class="dropdown-item" th:href="@{/MedioPago/ListaMedioPago}">Medio de Pago</a></li>
+                    </ul>
+                </li>  
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        Usuario
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/Usuario/NuevoUsuario}">Registrar</a></li>
+                        <li><a class="dropdown-item" th:href="@{/Usuario/ListaUsuarios}">Listar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+                        <span th:text="${username}"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" th:href="@{/Login}">Logout</a></li>
+                    </ul>
+                </li>                     
+            </ul>
+        </div>
+    </div>
+</nav>-->
